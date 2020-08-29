@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <django-objects version="1.0">
-    <object model="app.post">
+    <object model="post" pk="1">
         <field name="title" type="CharField">
             Hello
         </field>
@@ -16,14 +16,14 @@
         <field name="publication_date" type="DateTimeField">
             2020-08-25T18:35:52+00:00
         </field>
-        <field name="category" rel="ManyToOneRel" to="app.category">
+        <field name="category" rel="ManyToOneRel" to="category">
             1
         </field>
         <field name="author" rel="ManyToOneRel" to="auth.user">
             <None></None>
         </field>
     </object>
-    <object model="app.post">
+    <object model="post" pk="2">
         <field name="title" type="CharField">
             Hello
         </field>
@@ -39,31 +39,31 @@
         <field name="publication_date" type="DateTimeField">
             2020-08-25T18:35:52+00:00
         </field>
-        <field name="category" rel="ManyToOneRel" to="app.category">
+        <field name="category" rel="ManyToOneRel" to="category">
             1
         </field>
         <field name="author" rel="ManyToOneRel" to="auth.user">
             <None></None>
         </field>
     </object>
-    <object model="app.category">
+    <object model="category" pk="1">
         <field name="title" type="CharField">
             common
         </field>
     </object>
-    <object model="app.category">
+    <object model="category" pk="2">
         <field name="title" type="CharField">
             society
         </field>
     </object>
-    <object model="app.category">
+    <object model="category" pk="3">
         <field name="title" type="CharField">
             shell
         </field>
     </object>
-    <object model="app.category">
+    <object model="category" pk="4">
         <field name="title" type="CharField">
             lolchek
         </field>
     </object>
-</django-objects>
+    </django-objects>
